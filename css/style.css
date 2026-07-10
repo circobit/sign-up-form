@@ -232,3 +232,37 @@ button:active {
 
 }
 
+
+@media (min-width: 700px) and (orientation: portrait) {
+
+	#welcome {
+		font-size: 4rem;
+	}
+
+	#subtext {
+		font-size: 1.2rem;
+	}
+
+	.formGroupTop {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.formGroupBottom {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.formGroupTopLeft {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.formGroupTopRight {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+} 
