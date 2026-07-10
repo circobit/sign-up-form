@@ -183,18 +183,79 @@ button:active {
 	justify-content: center;
 }
 
+.landscapeImg {
+	display: none;
+}
+
+#desktopLeftFooter {
+	display: none;
+}
+
 
 @media (min-width: 900px) and (orientation: landscape) {
 
 	body {
-		background-position: center 40%;
+		background-image: revert;
+		background-size: revert;
+		background-position: revert;
+	}
+
+	.container {
+		padding: 0;
+		align-items: revert;
+	}
+
+	.hero {
+		/* 'revert is used' to undo the base settings */
+		align-items: center;
+		justify-content: center;
+		gap: revert;
+		/* background image to take part of the lesft side */
+		min-width: 40svw;
+		background-image: url("../images/icarius-jpeg.jpg");
+		background-size: cover;
+		background-position: center;
+		min-height: 100svh;
+	}
+
+	.heroTop,
+	.heroBottom {
+		height: 50svh;
+	}
+
+	.heroTop {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.heroBottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding-bottom: 2rem;
+	}
+
+	.formAndButtons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 60svw;
+		min-height: 100svh;
+		background-image: url("../images/sky-with-grain.png");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.formDiv {
+		width: 25svw;
 	}
 
 	.heroAndForm {
 		flex-direction: row;
-		justify-content: center;
 		width: 100%;
-		gap: 10vw;
+		gap: revert;
 	}
 
 	#welcome {
@@ -207,10 +268,6 @@ button:active {
 
 	#subtext {
 		font-size: 1.2rem;
-	}
-
-	footer {
-		font-size: 1rem;
 	}
 
 	.formGroupTop {
@@ -233,6 +290,15 @@ button:active {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+	}
+
+	footer {
+		display: none;
+	}
+
+	#desktopLeftFooter {
+		display: revert;
+		color: white;
 	}
 
 }
