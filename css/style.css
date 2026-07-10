@@ -178,6 +178,11 @@ button:active {
 	gap: 2.5rem;
 }
 
+.buttonCreateAccount {
+	display: flex;
+	justify-content: center;
+}
+
 
 @media (min-width: 900px) and (orientation: landscape) {
 
