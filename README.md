@@ -17,3 +17,10 @@ As an extra personal point not requested by TOP, I tried to play a bit with resp
 Desktop version
 
 ![Screenshot of the interface showing the desktop version of the sign-up form](./images/interface-desktop.png)
+
+
+Sample of the design in some of the different screen sizes
+
+`Note: This is just an example of some different screen sizes. It's not within the scope of this project to focus on responsiveness itself.`
+
+![Screenshot of the interface showing different screen sizes of the sign-up form](./images/multiple-screens.png)
